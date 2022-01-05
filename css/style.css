@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+a {
+    display: inline-block;
+}
+
+.container {
+    width: calc(100% - 180px);
+    margin: 0 auto;
+}
+
+.half-width {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+/* world start */
+.top-banner {
+    background-image: url(../images/top-banner.png);
+    background-repeat: no-repeat;
+    padding: 60px 0;
+}
+
+.content h1 {
+    font-size: 50px;
+}
+
+.content .owner {
+    background-image: linear-gradient(to right, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content .btn {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 30px;
+    position: relative;
+    border: 2px solid orange;
+    z-index: 1;
+    overflow: hidden;
+}
+.btn:hover {
+    color: #fff;
+}
+.content .btn::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: -100px;
+    top: 0;
+    transition: .4s ease-in-out all;
+    -webkit-transition: .4s ease-in-out all;
+    -moz-transition: .4s ease-in-out all;
+    -ms-transition: .4s ease-in-out all;
+    -o-transition: .4s ease-in-out all;
+    z-index: -1;
+}
+
+.content .btn:hover::after {  
+    color: #fff !important;
+    width: 100%;
+    left: 0;
+    background-image: linear-gradient(to right, orange, red);
+}
+
+.content p {
+    margin-top: 30px;
+}
+
+.image {
+    text-align: center;
+}
+
+.d-image img,
+.image img {
+    max-width: 80%;
+}
+
+.dream {
+    background-image: url(../images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 60px 0;
+}
+.d-image {
+    text-align: left;
+}
+
+.experience {
+    background-image: url(../images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left top 60%;
+    padding: 60px 0;
+}
+
+.experience h1 {
+    margin-bottom: 30px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.half {
+    flex-basis: 46%;
+    max-width: 46%;
+}
+
+.full {
+    border-left: 5px solid;
+    border-image: linear-gradient(salmon, tomato) 1;
+}
+
+.baby {
+    border-left: 5px solid;
+    border-image: linear-gradient(blue, cyan) 1;
+}
+
+.full,
+.baby {
+    padding: 80px 50px;
+    box-shadow: 5px 5px 20px #6a6a6a;
+}
+
+.baby h2,
+.full h2 {
+    font-size: 40px;
+    background-image: linear-gradient(to right, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.baby h4,
+.full h4 {
+    margin-bottom: 20px;
+}
+
+.baby p,
+.full p {
+    text-align: justify;
+}
+
+footer {
+    padding: 30px 0;
+}
+
+footer p {
+    text-align: center;
+}
